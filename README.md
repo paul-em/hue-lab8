@@ -27,7 +27,7 @@ Take a look at the code in `index.html` and `sw.js`, hopefully the comments make
 
 ## 3. Fixing that script
 
-The `install` event in the ServiceWorker is setting up the cache, but it's missing a reference to the script that adds the paragraph to the page. Add it to the array. The URL is `script.js`. It doesn't need to be a no-cors request like the Flickr image because it's on the same origin.
+The `install` event in the ServiceWorker is setting up the cache, but it's missing a reference to the script that adds the paragraph to the page. Add it to the array. The URL is `script.js`.
 
 Make sure you're online, refresh the page & watch the console. The browser checks for updates to the ServiceWorker script, if anything in the file has changed it considers it to be a new version. The new version is been picked up, but it isn't ready to use.
 
